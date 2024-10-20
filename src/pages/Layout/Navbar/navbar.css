@@ -1,0 +1,76 @@
+.navbar {
+  height: 70px;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  position: relative;
+  margin-top: 15px;
+}
+
+.navbar__container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.navbar__logo {
+  display: flex;
+  align-items: center;
+}
+
+.navbar__logo img {
+  width: 60px;
+  height: auto;
+}
+
+.navbar__options {
+  display: flex;
+  position: relative;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+}
+
+.navbar__underline {
+  position: absolute;
+  bottom: 0;
+  height: calc(var(--underline-height) / 2);
+  background-color: var(--light-blue);
+  pointer-events: none;
+  transition: width var(--transition-duration) ease-in-out,
+    transform var(--transition-duration) ease-in-out;
+}
+
+.navbar__option {
+  display: inline-block;
+  text-align: center;
+  padding: 1em 0;
+  cursor: pointer;
+  position: relative;
+  font-family: var(--font-family);
+  font-weight: 100;
+  font-size: var(--font-size);
+  z-index: 10;
+}
+
+.navbar__option a {
+  color: #2f2222;
+  text-decoration: none;
+  padding: 0 15px;
+}
+
+.navbar__telephone a {
+  text-decoration: none;
+  color: var(--light-blue);
+  font-weight: 700;
+  margin: 0 15px;
+}
+
+.active {
+  color: var(--light-blue) !important;
+}

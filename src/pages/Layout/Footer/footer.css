@@ -1,0 +1,35 @@
+.footer {
+  font-family: var(--font-family);
+  width: 100%;
+  position: absolute; 
+  bottom: 0; 
+  left: 0;
+  margin-top: auto;
+  background-color: rgba(93, 113, 221, 0.05);
+  padding: 0;
+}
+
+.footer__container {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer__logo {
+  padding: 2em 0;
+}
+
+.footer__information {
+  padding: 2em;
+}
+
+.footer__information a{
+    text-decoration: none;
+    color: rgba(47, 34, 34, 1);
+    margin: 0 2em;
+}
+
+.footer__credits {
+}
